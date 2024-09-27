@@ -1,18 +1,23 @@
 [tool.poetry]
 name = "shadow_data"
 version = "0.1.0"
-description = "A Python library for data anonymization, masking, and perturbation with API support."
+description = "A Python library for data anonymization, masking, and perturbation."
 authors = ["Adler Medrado <adler@adlermedrado.com.br>"]
 license = "BSD"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-fastapi = "^0.115.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^8.3.3"
-pytest-asyncio = "^0.24.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.8"
+pytest-cov = "^5.0.0"
 
 [build-system]
 requires = ["poetry-core>=1.9.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+lint.select = ["E", "W"]
