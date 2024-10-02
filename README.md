@@ -1,4 +1,6 @@
 ![Build Status](https://github.com/adlermedrado/ShadowData/actions/workflows/main.yml/badge.svg)
+[![codecov](https://codecov.io/gh/adlermedrado/ShadowData/branch/main/graph/badge.svg)](https://codecov.io/gh/your-username/your-repo)
+
 
 # ShadowData - A sensitive data handler python library
 ShadowData is a Python library designed to simplify the processing and handling of sensitive data securely and efficiently.
