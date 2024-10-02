@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "shadow_data"
 version = "0.1.0"
-description = "A Python library for data anonymization, masking, and perturbation."
+description = "A sensitive data handler python library"
 authors = ["Adler Medrado <adler@adlermedrado.com.br>"]
-license = "BSD"
+license = "BSD-3 Clause"
 
 [tool.poetry.dependencies]
 python = "^3.12"
