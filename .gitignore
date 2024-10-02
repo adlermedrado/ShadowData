@@ -155,5 +155,4 @@ dmypy.json
 cython_debug/
 
 # Jetbrains
-/.idea/
-.idea/*
+.idea/
