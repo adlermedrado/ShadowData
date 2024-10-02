@@ -33,7 +33,7 @@ jobs:
 
       - name: Run Ruff (Linting)
         run: |
-          poetry run ruff .
+          poetry run ruff check .
 
   test:
     runs-on: ubuntu-latest
