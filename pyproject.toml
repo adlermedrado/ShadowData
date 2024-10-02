@@ -8,11 +8,10 @@ license = "BSD"
 [tool.poetry.dependencies]
 python = "^3.12"
 
-[tool.poetry.dev-dependencies]
-pytest = "^8.3.3"
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.6.8"
+pytest = "^8.3.3"
 pytest-cov = "^5.0.0"
 
 [build-system]
