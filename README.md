@@ -13,6 +13,12 @@ ShadowData is a Python library designed to simplify the processing and handling 
 - Easy integration with existing Python data processing pipelines.
 - Compliance with GDPR, LGPD and other data protection regulations.
 
+## Installing
+`pip install shadow_data`
+
+## Usage
+Examples soon
+
 ## Contributing
 
 Contributions are welcome! Please follow the guidelines below to contribute to the project.
