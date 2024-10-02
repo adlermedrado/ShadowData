@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies with Poetry
         run: |
           poetry install --no-interaction --no-root
-          poetry install --with dev  # Instala as dependências de desenvolvimento
+          poetry install --with dev 
 
       - name: Run Ruff (Linting)
         run: |
@@ -55,11 +55,11 @@ jobs:
       - name: Install dependencies with Poetry
         run: |
           poetry install --no-interaction --no-root
-          poetry install --with dev  # Instala as dependências de desenvolvimento
+          poetry install --with dev 
 
       - name: Run Pytest with coverage
         run: |
-          poetry run pytest --cov=./ --cov-fail-under=80
+          poetry run pytest --cov=./ --cov-fail-under=80 --cov-report=xml
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v3
