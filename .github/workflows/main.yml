@@ -59,7 +59,7 @@ jobs:
 
       - name: Run Pytest with coverage
         run: |
-          poetry run pytest --cov=./  # Roda pytest com cobertura
+          poetry run pytest --cov=./ --cov-fail-under=80
 
       - name: Upload coverage report
         uses: actions/upload-artifact@v3
