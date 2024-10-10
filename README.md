@@ -30,4 +30,4 @@ Contributions are welcome! Please follow the guidelines below to contribute to t
 	5.	Open a pull request.
 
 ## License
-This project is licensed under the BSD-3 Clause License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
