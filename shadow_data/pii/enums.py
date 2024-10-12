@@ -5,6 +5,7 @@ class ModelSize(Enum):
     SMALL = 'sm'
     MEDIUM = 'md'
     LARGE = 'lg'
+    TRF = 'trf'
 
 
 class ModelLang(Enum):
@@ -15,5 +16,6 @@ class ModelLang(Enum):
     FRENCH = 'fr'
 
 
-class ModelCoreNews(Enum):
-    CORE_NEWS = 'core_news'
+class ModelCore(Enum):
+    NEWS = 'core_news'
+    WEB = 'core_web'
