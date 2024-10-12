@@ -1,5 +1,3 @@
-import pytest
-
 from shadow_data.l10n.usa import IdentifierAnonymizer
 
 

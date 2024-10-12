@@ -12,7 +12,6 @@ This library primarily uses spaCy to process text and identify personally identi
 from shadow_data.pii.enums import ModelLang, ModelCore, ModelSize
 from shadow_data.pii.spacy import SensitiveData
 
-# content = 'David Thompson lives at 456 Elmwood Drive, Apartment 12A, Springfield, Illinois, 62704. He works as a Project Manager at BrightTech Innovations, a growing tech firm located at 321 Innovation Way, Springfield, IL 62701. David has been with the company for three years, where he manages a team of developers and designers, ensuring projects are delivered on time and meet client expectations. You can contact him by phone at (555) 123-7890 or by email at david.thompson@brighttech.com. David is highly regarded for his leadership and problem-solving skills within the company.'
 content = 'João Silva mora na Rua das Acácias, 123, Apartamento 5B, São Paulo, SP, 01310-000. Ele trabalha como Gerente de Projetos na TechNova Soluções, uma empresa de tecnologia em crescimento localizada na Avenida Paulista, 987, São Paulo, SP, 01311-200. João está na empresa há três anos, onde lidera uma equipe de desenvolvedores e designers, garantindo que os projetos sejam entregues no prazo e atendam às expectativas dos clientes. Você pode contatá-lo pelo telefone (11) 91234-5678 ou pelo e-mail joao.silva@technova.com. João é muito respeitado por suas habilidades de liderança e resolução de problemas dentro da empresa.'
 instance = SensitiveData()
 sensitive_data = instance.identify_sensitive_data(ModelLang.PORTUGUESE, ModelCore.NEWS, ModelSize.LARGE, content)

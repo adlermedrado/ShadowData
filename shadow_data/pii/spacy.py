@@ -37,7 +37,7 @@ class ModelSelector:
             try:
                 subprocess.run(['python', '-m', 'spacy', 'download', model_name], check=True)
                 nlp = spacy.load(model_name)
-            except subprocess.CalledProcessError as e:
+            except subprocess.CalledProcessError:
                 raise RuntimeError(f'Could not download and load model {model_name}')
         return nlp
 

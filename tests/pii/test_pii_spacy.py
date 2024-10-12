@@ -62,7 +62,7 @@ class TestModelSelector:
             assert isinstance(nlp, MagicMock)
 
     def test_select_model_download_failure(self):
-        with patch('spacy.load', side_effect=OSError) as mock_spacy_load, patch(
+        with patch('spacy.load', side_effect=OSError), patch(
             'subprocess.run', side_effect=subprocess.CalledProcessError(1, 'cmd')
         ) as mock_subprocess_run:
             lang = ModelLang.ENGLISH

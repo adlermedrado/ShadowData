@@ -1,6 +1,5 @@
 import pytest
 
-from shadow_data.l10n.ClearIdentifier import ClearIdentifier
 from shadow_data.l10n.brazil import IdentifierAnonymizer
 
 
