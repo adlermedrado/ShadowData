@@ -3,11 +3,15 @@ name = "shadow_data"
 version = "0.1.0"
 description = "A sensitive data handler python library"
 authors = ["Adler Medrado <adler@adlermedrado.com.br>"]
-license = "BSD-3 Clause"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.12"
 
+spacy = { version = "^3.8", optional = true, markers = "platform_system == 'Darwin' and platform_machine == 'arm64' or platform_system == 'Darwin' and platform_machine == 'x86_64' or platform_system == 'Linux' or platform_system == 'Windows'" }
+
+[tool.poetry.extras]
+spacy = ["spacy"]
 
 [tool.poetry.group.dev.dependencies]
 ruff = "^0.6.8"

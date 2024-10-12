@@ -10,6 +10,8 @@ test:
 coverage:
 	poetry run pytest -vvv --cov
 
+format:
+	poetry run ruff format .
 
 .PHONY: test coverage 
 
