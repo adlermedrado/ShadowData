@@ -7,17 +7,34 @@ ShadowData is a Python library designed to simplify the processing and handling 
 
 ## Features (The project is under development)
 
-- Data anonymization.
-- Encryption and decryption of sensitive data.
-- Data masking for privacy-preserving data handling.
-- Easy integration with existing Python data processing pipelines.
-- Compliance with GDPR, LGPD and other data protection regulations.
+- Data anonymization. (Work in progress)
+- PII - Personal Identified Information detection using Natual Language Processing (Work in progress) 
+- Encryption and decryption of sensitive data. (Development has not started yet)
+- Data masking for privacy-preserving data handling. (Work in progress)
+- Compliance with GDPR, LGPD and other data protection regulations. (Work in progress)
 
-## Installing
-`pip install shadow_data`
+## Installation Instructions
+
+```bash
+pip install shadow_data
+```
+* Installs only the core library, without the spaCy dependency.
+
+```bash 
+pip install shadowdata[spacy]
+```
+* Installs spaCy automatically, based on your platform.
+
+By default, ShadowData will automatically download the necessary language model if it’s not already installed. However, if you’d prefer to install it manually, use the following command:
+```bash
+python -m spacy download en_core_web_trf
+```
+Make sure to run this command within your project’s virtual environment.
+
+[Check spaCy's documentation to know more about the Language Models.](https://spacy.io/models)
 
 ## Usage
-Examples soon
+There are some usage examples at the [examples](examples) directory
 
 ## Contributing
 
