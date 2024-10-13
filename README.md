@@ -25,7 +25,7 @@ pip install shadowdata[spacy]
 ```
 * Installs spaCy automatically, based on your platform.
 
-By default, ShadowData will automatically download the necessary language model if it’s not already installed. However, if you’d prefer to install it manually, use the following command:
+By default, ShadowData will automatically download the necessary language model if it’s not already installed. However, if you’d prefer to install it manually, use the following command as example:
 ```bash
 python -m spacy download en_core_web_trf
 ```
