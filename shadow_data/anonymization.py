@@ -26,8 +26,28 @@ class EmailAnonymization:
         user, domain = email.split('@')
         anonymized_user = '*' * len(user)
         domain_parts = domain.split('.')
-        anonymized_domain = (
-            '*' * (len(domain_parts[0]) - 3) + domain_parts[0][-3:] + '.' + '.'.join(domain_parts[1:])
-        )
+        anonymized_domain = '*' * (len(domain_parts[0]) - 3) + domain_parts[0][-3:] + '.' + '.'.join(domain_parts[1:])
 
         return f'{anonymized_user}@{anonymized_domain}'
+
+
+class PhoneNumberAnonymization:
+    @staticmethod
+    def anonymize_phone_number(phone: str) -> str:
+        digits = re.findall(r'\d', phone)
+
+        if len(digits) > 4:
+            masked_digits = ['*' for _ in range(len(digits) - 4)] + digits[-4:]
+            digit_index = 0
+            result = []
+
+            for char in phone:
+                if char.isdigit():
+                    result.append(masked_digits[digit_index])
+                    digit_index += 1
+                else:
+                    result.append(char)
+
+            return ''.join(result)
+
+        return phone
