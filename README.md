@@ -9,7 +9,7 @@ ShadowData is a Python library designed to simplify the processing and handling 
 
 - Data anonymization. (Work in progress)
 - PII - Personal Identified Information detection using Natual Language Processing (Work in progress) 
-- Encryption and decryption of sensitive data. (Development has not started yet)
+- Encryption and decryption of sensitive data. (Work in progress)
 - Data masking for privacy-preserving data handling. (Work in progress)
 - Compliance with GDPR, LGPD and other data protection regulations. (Work in progress)
 
