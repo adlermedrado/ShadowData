@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "shadow_data"
-version = "0.2.0"
+version = "0.3.0"
 description = "A sensitive data handler python library"
 authors = ["Adler Medrado <adler@adlermedrado.com.br>"]
 license = "MIT"
