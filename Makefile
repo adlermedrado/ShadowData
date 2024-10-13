@@ -13,5 +13,11 @@ coverage:
 format:
 	poetry run ruff format .
 
+check:
+	poetry run ruff check .
+
+check-fix:
+	poetry run ruff check --fix .
+
 .PHONY: test coverage 
 
