@@ -1,12 +1,8 @@
-from shadow_data.cryptohash.symmetric_cipher import Symmetricfrom torch.distributions.constraints import symmetric
-
 # Symmetric encryption
 
-This simple encryption and decryption approach use symmetric cryptography
-Basically the user can generate a encryption key and use it to encrypt and decrypt data.
+This simple encryption and decryption method uses symmetric cryptography. Users can generate an encryption key, which they can use to both encrypt and decrypt their data.
 
-**The key management is user's responsability, ShadowData don't save any kind of keys or credentials.**
-
+**Key management is the user’s responsibility; _ShadowData_ does not store any keys or credentials.**
 ## How to use
 
 ```python
@@ -30,7 +26,7 @@ Encrypted: b'gAAAAABnDAexPmKZ0Bh9U4KH7iv_OsHQ1p2ijjJjdHYbagZ-xdyWRT5ChcAw_gVSwfP
 Decrypted: Hello World!
 ```
 
-## If the key was already created
+## If the key has already been created 
 
 ```python
 from shadow_data.cryptohash.symmetric_cipher import Symmetric
