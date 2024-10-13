@@ -980,17 +980,6 @@ pytest = ">=4.6"
 testing = ["fields", "hunter", "process-tests", "pytest-xdist", "virtualenv"]
 
 [[package]]
-name = "python-json-logger"
-version = "2.0.7"
-description = "A python library adding a json log formatter"
-optional = false
-python-versions = ">=3.6"
-files = [
-    {file = "python-json-logger-2.0.7.tar.gz", hash = "sha256:23e7ec02d34237c5aa1e29a070193a4ea87583bb4e7f8fd06d3de8264c4b2e1c"},
-    {file = "python_json_logger-2.0.7-py3-none-any.whl", hash = "sha256:f380b826a991ebbe3de4d897aeec42760035ac760345e57b812938dc8b35e2bd"},
-]
-
-[[package]]
 name = "requests"
 version = "2.32.3"
 description = "Python HTTP for Humans."
@@ -1514,4 +1503,4 @@ spacy = ["spacy"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "622cdde5d1e737b2fed9468b483925a8d596c5df66eff37f75c00749d9773eab"
+content-hash = "f50fd7b56121bc7261fbcc5a01bc5d454345b458ae514aa419151bb907e893f4"
